@@ -27,7 +27,7 @@ int sum(int c, int d, int e)
 {
 	return c+d+e;
 }
-int sum(double f, float g, int h)
+float sum(float f, float g, float h)
 {
 	return f+g+h;
 }
