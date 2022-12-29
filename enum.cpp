@@ -1,6 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
+//example of class
 //class all{
 //	private:
 //		char name[50];
@@ -19,6 +20,7 @@ using namespace std;
 //		}
 //
 //};
+/*below shows the steps for function overloading from line 24 to 40*/
 int sum(int a, int b)
 {
 	return a+b;
