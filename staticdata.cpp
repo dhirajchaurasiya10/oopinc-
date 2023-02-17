@@ -2,41 +2,22 @@
 #include<conio.h>
 using namespace std;
 class book{
-	private:
-		static int cn;
-		char name[50];
-		int id;
-		public: 
-		void readdata() {
-			cout<<"enter id"<<endl;
-			cin>>id;
-			cout<<"name of book"<<endl;
-			cin>>name;
-			cn++;
+	static int count;
+	public:
+		static int getcount(){
+			return count;
 		}
-		void display()
-		{
-			cout<<endl<<id<<"\t"<<name;
-		}
-		void displaycount() {
-			cout<<"the no of object"<<endl<<cn;
+		static int increasecount() {
+			count++;
 		}
 };
-int book::cn;
+int book::count;
 int main(){
+	cout<<"initial value"<<book::getcount()<<endl;
 	book b1,b2,b3;
-	system("cls");
-	b1.readdata();
-	b1.displaycount();
-	
-	b2.readdata();
-	b2.displaycount();
-	
-	b3.readdata();
-	b3.displaycount();
-	
-	cout<<endl<<"id\t"<<"name";
-	b1.display();
-	b2.display();
-	b3.display();
+	book::increasecount();
+	book::increasecount();
+	book::increasecount();
+	book::increasecount();
+	cout<<"final value"<<book::getcount()<<endl;
 }
