@@ -1,1 +1,2 @@
-# oopinc-a programs collection for oop in c++
+# oopinc++ <br>
+Collection of programs in C++ made during learning C++ in Second Semester.
