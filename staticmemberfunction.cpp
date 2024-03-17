@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 class book{
 	static int count;
@@ -7,7 +6,7 @@ class book{
 		static int getcount(){
 			return count;
 		}
-		static int increasecount() {
+		static void increasecount() {
 			count++;
 		}
 };
